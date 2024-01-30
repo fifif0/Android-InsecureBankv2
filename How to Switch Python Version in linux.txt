@@ -1,0 +1,15 @@
+How to Switch Python Version in Ubuntu & Debian
+
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1 
+
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.10 2
+
+sudo update-alternatives --config python
+
+https://tecadmin.net/how-to-switch-python-version-in-ubuntu-debian/
+
+
+How to make pip install to PATH on Linux?
+
+
+export PATH="$HOME/.local/bin:$PATH"

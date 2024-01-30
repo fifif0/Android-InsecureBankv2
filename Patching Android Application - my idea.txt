@@ -1,0 +1,10 @@
+How To Manually Sign APK’s with keytool Jarsigner & Zipalign
+
+keytool -genkeypair -alias myalias -keyalg RSA -keysize 2048 -validity 10000 -keystore mykeystore.jks
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore mykeystore.jks InsecureBankv2.apk myalias
+
+zipalign -v 4 InsecureBankv2.apk InsecureBankv2-align.apk
+
+
+https://aditya-chauhan17.medium.com/how-to-manually-sign-apks-with-keytool-jarsigner-zipalign-a29503bf97d7
